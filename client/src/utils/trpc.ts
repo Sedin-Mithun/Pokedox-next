@@ -11,7 +11,7 @@ function getBaseUrl() {
     return `http://${process.env.RENDER_INTERNAL_HOSTNAME}:${process.env.PORT}`;
   }
 
-  return `http://localhost:${process.env.PORT ?? 4000}`;
+  return `http://localhost:3000`;
 }
 
 export const trpc = createTRPCNext<AppRouter>({
@@ -19,7 +19,7 @@ export const trpc = createTRPCNext<AppRouter>({
     return {
       links: [
         httpBatchLink({
-          url: "https://pokedex-api-wheat.vercel.app/trpc",
+          url: `${getBaseUrl()}/api/trpc`,
         }),
       ],
     };
