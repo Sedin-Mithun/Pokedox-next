@@ -1,4 +1,4 @@
-import { AppRouter } from './../../server/src/trpc/trpcRouter';
+import { AppRouter } from '../pages/api/trpcRouter';
 import { httpBatchLink } from '@trpc/client';
 import { createTRPCNext } from '@trpc/next';
 
