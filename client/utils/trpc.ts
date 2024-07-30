@@ -19,7 +19,7 @@ export const trpc = createTRPCNext<AppRouter>({
     return {
       links: [
         httpBatchLink({
-          url: `${getBaseUrl()}/trpc`,
+          url: "https://pokedex-api-wheat.vercel.app/trpc",
         }),
       ],
     };
