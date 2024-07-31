@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postinstall": "prisma generate && npx prisma migrate dev --name init && npx ts-node prisma/seed.mjs"
+    "postinstall": "prisma generate && npx ts-node prisma/seed.mjs"
   },
   "dependencies": {
     "@emotion/react": "^11.13.0",
