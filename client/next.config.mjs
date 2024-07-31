@@ -5,7 +5,7 @@ const nextConfig = {
         DATABASE_URL: process.env.DATABASE_URL
     },
     eslint: {
-      ignoreDuringBuilds: tru
+      ignoreDuringBuilds: true,
     }
     
 };
